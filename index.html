@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<main id="wrapper">
+		<div id="header">
+			
+			<div class="spp">
+				<span><i class="fa fa-bars" aria-hidden="true" style="font-size: 25px"></i></span>
+				
+			</div>
+			<div class="pps">
+				<span class="name2"><i class="fa fa-lock" aria-hidden="true" style="font-size: 25px"></i></span>
+				<span><i class="fa fa-desktop" aria-hidden="true" style="font-size: 25px"></i></span>
+				<span><i class="fa fa-plus-circle" aria-hidden="true" style="font-size: 25px"></i></span>
+				<span><i class="fa fa-clipboard" aria-hidden="true" style="font-size: 25px"></i></span>
+			</div>
+		</div>
+		<div id="container">
+			<div id="sidebox">
+				<div class="sidebox1">
+					<button type="button" class="side1"><i class="fa fa-windows" aria-hidden="true" style="font-size: 20px;"></i></button>
+					<span class="name"><i class="fa fa-home" aria-hidden="true" style="font-size: 25px;"></i></span>
+					
+				</div>
+				<div class="sidebox2">
+					<span class="name1"><i class="fa fa-cog" aria-hidden="true" style="margin-top: 210px; font-size: 25px"></i></span>
+					<span class="name1"><i class="fa fa-arrows-alt" aria-hidden="true" style="font-size: 25px"></i></span>
+					<span class="name1"><i class="fa fa-home" aria-hidden="true" style="font-size: 25px"></i></span>
+				</div>
+			</div>
+			<div id="side_container">
+				<div id="cont_left">
+					<div id="box">
+					   <div class="box1">
+					   	<div class="bo1">
+					   		<p class="para">Active Critical Alarms</p>
+					   	</div>
+					   	<div class="bo2"><p class="para">57.0</p></div>
+					   </div>
+					   <div class="box1">
+					   		<div class="bo1">
+					   		<p class="para">Active High Alarms</p>
+					   	</div>
+					   	<div class="bo2"><p class="para">57.0</p></div>
+					   </div>
+					   <div class="box2">
+					   		<div class="bo1">
+					   		<p class="para">Active Low Alarms</p>
+					   	</div>
+					   	<div class="bo2"><p class="para">57.0</p></div>
+					   </div>
+					   <div class="box3">
+					   	<div class="bo3">
+					   		<p class="para2" >Total Load</p>
+					   	</div>
+					   	<div class="bo4"><p class="para3">57.0</p></div>
+					   </div>
+					</div> 
+					<div id="middle_box">
+						<div class="middle_left card-body">
+							<canvas id="myChart"></canvas>
+						</div>
+						<div class="middle_right">
+							<canvas id="mychart"></canvas>
+						</div>
+					</div> 
+					<div id="bottom_box">
+						<div class="bottom_left">
+							<img src="image/image1.png">
+						</div>
+						<div class="bottom_right">
+							<img src="image/images4.png">
+						</div>
+					</div>  
+				</div>
+				<div id="cont_right">
+					<div id="cont_right_box">
+						<div id="cont_right_box1">
+							<div class="cont_para"><p class="cont_para1">Energy Consumption</p>
+                             <hr class="line">
+							</div>
+							
+							<div class="cont_para">
+								<div class="cont_para3"><p class="cont_para2">Today</p></div>
+								<div class="cont_para3"><p class="cont_para2">64265.9</p></div>
+                                 <hr class="line">
+							</div>
+							
+							<div class="cont_para">
+								<div class="cont_para3"><p class="cont_para2">Yesterday</p></div>
+								<div class="cont_para3"><p class="cont_para2">64265.9</p></div>
+								<hr class="line">
+							</div>
+							
+							<div class="cont_para">
+								<div class="cont_para3"><p class="cont_para2">This Week</p></div>
+								<div class="cont_para3"><p class="cont_para2">64265.9</p></div>
+								<hr class="line">
+							</div>
+							
+							<div class="cont_para">
+								<div class="cont_para3"><p class="cont_para2">Last Weak</p></div>
+								<div class="cont_para3"><p class="cont_para2">64265.9</p></div>
+								<hr class="line">
+							</div>
+							<hr class="line">
+							<div class="cont_para">
+								<div class="cont_para3"><p class="cont_para2">This Months</div>
+								<div class="cont_para3"><p class="cont_para2">64265.9</p></div>
+								<hr class="line">
+							</div>
+							
+							<div class="cont_para">
+								<div class="cont_para3"><p class="cont_para2">Last Months</p></div>
+								<div class="cont_para3"><p class="cont_para2">64265.9</p></div>
+
+							</div>
+						</div>
+					</div>
+					<div id="cont_bottom_box">
+						<div id="cont_bottom_box1">
+							<img src="image/images6.png">
+						</div>
+					</div>
+					
+				</div>    
+			</div>
+		</div>
+		
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        
+        datasets: [{
+            label: 'Line chart',
+            backgroundColor: 'rgb(0, 99, 132)',
+            borderColor: 'rgb(0, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+	</script>
+	<script>
+		var ctx = document.getElementById('mychart').getContext('2d');
+        var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Bar Chart',
+            backgroundColor: ['rgb(0, 99, 132)','green','blue','red','orange','purple'],
+            borderColor: 'rgb(0, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+	
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

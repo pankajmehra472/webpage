@@ -1,0 +1,292 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	width: 100%;
+	height: 657px;
+}
+#header{
+	width: 95%;
+	height: 60px;
+	background-color: silver;
+	margin-left: 5%;
+}
+#header .spp{
+	width:50%;
+	height: 60px;
+	float: left;
+	
+	
+}
+span i{
+	width: 40px;
+	height: 10px;
+	margin-top: 20px;
+	font-size: 40px;
+}
+#header .pps{
+	width: 50%;
+	height: 60px;
+	float: left;
+
+}
+.name2{
+	margin-left: 410px;
+}
+#container{
+	width: 100%;
+	height: 597px;
+	
+}
+#sidebox{
+	width: 5%;
+	height: 657px;
+	background-color: silver;
+	float: left;
+	position: absolute;
+	top: 0;
+	box-shadow: 2px 5px 10px silver;
+}
+.sidebox1{
+	width: 100%;
+	height: 329px;
+	
+}
+.side1{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: silver;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.name{
+	margin-left: 10px;
+}
+.sidebox2{
+	width: 100%;
+	height: 328px;
+
+}
+.name1{
+	margin-top: 100px;
+	margin-left: 20px;
+}
+#side_container{
+	width: 90%;
+	height: 580px;
+	float: left;
+	margin-left: 7%;
+	margin-top: 10px;
+}
+#cont_left{
+	width: 80%;
+	height: 580px;
+	float: left;
+}
+
+#box{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+
+}
+.box1{
+	width: 231px;
+	height: 90px;
+	float: left;
+	background-color: red;
+	margin-left: 12px;
+	margin-top: 5px;
+}
+.box2{
+	width: 231px;
+	height: 90px;
+	float: left;
+	background-color: orange;
+	margin-left: 12px;
+	margin-top: 5px;
+}
+.box3{
+	width: 231px;
+	height: 90px;
+	float: left;
+	background-color: blue;
+	margin-left: 11px;
+	margin-top: 5px;
+}
+.bo1{
+	width: 115px;
+	height: 90px;
+	float: left;
+}
+.bo2{
+    width: 116px;
+	height: 90px;
+    float: left;
+}
+.bo3{
+	width: 231px;
+	height: 60px;
+	float: left;
+}
+.bo4{
+	width: 231px;
+	height: 30px;
+	float: left;
+}
+.para{
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-align: justify;
+	text-align: center;
+	margin-top: 40px;
+
+}
+.para2{
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-align: justify;
+	text-align: center;
+	margin-top: 35px;
+	
+}
+.para3{
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	text-align: justify;
+	text-align: center;
+}
+#middle_box{
+	width: 100%;
+	height: 240px;
+	background-color: white;
+}
+.middle_left{
+	width: 54%;
+	height: 230px;
+	background-color: silver;
+	float: left;
+	margin-left: 1rem;
+}
+#myChart{
+	width: 100%;
+	height: 230px;
+   
+	
+
+}
+.middle_right{
+	width: 42%;
+	height: 230px;
+	background-color: silver;
+	float: left;
+	margin-left: 1%;
+}
+.middle_right img{
+	width: 90%;
+	height: 210px;
+	background-size: cover;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+#bottom_box{
+	width: 100%;
+	height: 240px;
+	background-color: white;
+}
+.bottom_left{
+	width: 54%;
+	height: 230px;
+	background-color: silver;
+	float: left;
+	margin-left: 1rem;
+}
+.bottom_left img{
+	width: 90%;
+	height: 210px;
+	background-size: cover;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+.bottom_right{
+	width: 42%;
+	height: 230px;
+	background-color: silver;
+	float: left;
+	margin-left: 1%;
+}
+.bottom_right img{
+	width: 90%;
+	height: 210px;
+	background-size: cover;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+#cont_right{
+	width: 20%;
+	height: 580px;
+	float: left;
+}
+#cont_right_box{
+	width: 100%;
+	height: 340px;
+	background-color: white;
+}
+#cont_right_box1{
+	width: 100%;
+	height: 322px;
+	background-color: silver;
+	float: left;
+    margin-top: 7px;
+}
+.cont_para{
+	width: 100%;
+	height: 46px;
+	float: left;
+}
+.cont_para1{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	text-align: justify;
+	text-align: center;
+}
+.cont_para3{
+	width: 50%;
+	height: 46px;
+	float: left;
+}
+.cont_para2{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+#cont_bottom_box{
+	width: 100%;
+	height: 240px;
+	background-color: white;
+}
+#cont_bottom_box1{
+    width: 100%;
+	height: 232px;
+	background-color: silver;
+	float: left;
+    margin-top: 1px;
+}
+#cont_bottom_box1 img{
+	width: 90%;
+	height: 210px;
+	background-size: cover;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+.line{
+	width: 100%;
+}
